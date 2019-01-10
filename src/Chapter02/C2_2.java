@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Program to calculate interest
  *
- * @author mw1016080
+ * @author Manuel Whiteman
  */
 public class C2_2 {
 

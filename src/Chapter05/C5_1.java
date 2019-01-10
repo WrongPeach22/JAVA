@@ -3,7 +3,9 @@ package Chapter05;
 import java.util.Scanner;
 
 /**
- * Program to add up totals while counting down to zero Manuel Whiteman
+ * Program to add up totals while counting down to zero
+ *
+ * @author Manuel Whiteman
  */
 public class C5_1 {
 
