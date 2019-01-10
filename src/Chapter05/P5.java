@@ -3,7 +3,9 @@ package Chapter05;
 import java.util.Scanner;
 
 /**
- * Program to count votes Manuel Whiteman
+ * Program to count votes
+ *
+ * @author Manuel Whiteman
  */
 public class P5 {
 

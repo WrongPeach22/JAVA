@@ -3,7 +3,9 @@ package Chapter06;
 import java.util.Scanner;
 
 /**
- * Program to convert currency Manuel Whiteman
+ * Program to convert currency
+ *
+ * @author Manuel Whiteman
  */
 public class P6 {
 
@@ -52,8 +54,8 @@ public class P6 {
     /**
      * Method that converts currencies
      *
-     * @param dollars - U.S. currency
-     * @param exchangeRate - how much money you get when you exchange your money
+     * @param dollars U.S. currency
+     * @param exchangeRate how much money you get when you exchange your money
      * @return conversion amount
      */
     public static double convert(double dollars, double exchangeRate) {

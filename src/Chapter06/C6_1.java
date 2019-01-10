@@ -3,7 +3,9 @@ package Chapter06;
 import java.util.Scanner;
 
 /**
- * Program to figure out if a password is valid Manuel Whiteman
+ * Program to figure out if a password is valid
+ *
+ * @author Manuel Whiteman
  */
 public class C6_1 {
 
@@ -23,7 +25,7 @@ public class C6_1 {
     /**
      * Program looks for validation
      *
-     * @param password - users password
+     * @param password users password
      * @return true or false which is determined by the validity
      */
     public static boolean isValid(String password) {
