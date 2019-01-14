@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 /**
  * 
- * 
+ * klkjk
  * @author at1009910
  */
 public class P7 {
