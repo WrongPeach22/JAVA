@@ -1,42 +1,68 @@
 package Chapter07;
-import java.util.Arrays;
+
+import java.util.ArrayList;
 import java.util.Scanner;
+
 /**
- * 
- * klkjk
- * @author at1009910
+ * Program to get the numbers to be read, display the contents of the array, and
+ * to print the average.
+ *
+ * @author Arrian Taton
  */
 public class P7 {
 
+    /**
+     * Main method
+     *
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        // Create the array
         System.out.print("How many numbers will be read: ");
-        int[] numbers = new int[input.nextInt()];
+        int numbers = input.nextInt();
+        ArrayList<Integer> x = new ArrayList<>(numbers);
 
-        fillArray(numbers, input);
-        System.out.println("The average is " + average(numbers));
-        displayArray(numbers);
+        fillArrayList(x, input, numbers);
+        System.out.println("The average is " + average(x));
+        displayArray(x);
     }
 
-    public static void fillArray(int[] numbers, Scanner input) {
-        System.out.print("Enter " + numbers.length + " elements: ");
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = input.nextInt();
+    /**
+     * Method to get the elements of an ArrayList
+     *
+     * @param x
+     * @param input
+     * @param numbers
+     */
+    public static void fillArrayList(ArrayList<Integer> x, Scanner input, int numbers) {
+        System.out.print("Enter " + numbers + " elements: ");
+        for (int i = 0; i < numbers; i++) {
+            x.add(input.nextInt());
         }
     }
 
-    public static double average(int[] numbers) {
+    /**
+     * Get the average of the ArrayList
+     *
+     * @param x
+     * @return
+     */
+    public static double average(ArrayList<Integer> x) {
         double sum = 0;
 
-        for (int i = 0; i < numbers.length; i++) {
-            sum = sum + numbers[i];
+        for (int i = 0; i < x.size(); i++) {
+            sum = sum + x.get(i);
         }
 
-        return sum / numbers.length;
+        return sum / x.size();
     }
 
-    public static void displayArray(int[] numbers) {
-        System.out.println("The contents of the array: " + Arrays.toString(numbers));
+    /**
+     * Display the ArrayList
+     *
+     * @param x
+     */
+    public static void displayArray(ArrayList<Integer> x) {
+        System.out.println("The contents of the array: " + x);
     }
 }
