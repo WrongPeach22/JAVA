@@ -1,12 +1,19 @@
 package Chapter07;
+
 import java.util.Scanner;
+
 /**
- * program
- * 
- * @author Isaiah hajabolhasssan
+ * Program to determine the grade and the score of the student
+ *
+ * @author Haiqa Zia
  */
 public class C7_1 {
 
+    /**
+     * Main Method
+     *
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         // Create the array
@@ -28,6 +35,12 @@ public class C7_1 {
         }
     }
 
+    /**
+     * Method to calculate the score of the student
+     *
+     * @param scores
+     * @return best
+     */
     public static int bestScore(int[] scores) {
         int best = scores[0];
 
@@ -40,6 +53,13 @@ public class C7_1 {
         return best;
     }
 
+    /**
+     * Method to calculate the garde by letter
+     *
+     * @param score
+     * @param best
+     * @return grade
+     */
     public static char determineGrade(int score, int best) {
         if (score >= best - 10) {
             return 'A';
