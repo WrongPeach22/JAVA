@@ -30,9 +30,9 @@ public class P7 {
     /**
      * Method to get the elements of an ArrayList
      *
-     * @param x
-     * @param input
-     * @param numbers
+     * @param x ArrayList
+     * @param input Scanner Object
+     * @param numbers Size, capacity
      */
     public static void fillArrayList(ArrayList<Integer> x, Scanner input, int numbers) {
         System.out.print("Enter " + numbers + " elements: ");
@@ -44,8 +44,8 @@ public class P7 {
     /**
      * Get the average of the ArrayList
      *
-     * @param x
-     * @return
+     * @param x ArrayList
+     * @return average
      */
     public static double average(ArrayList<Integer> x) {
         double sum = 0;
@@ -60,7 +60,7 @@ public class P7 {
     /**
      * Display the ArrayList
      *
-     * @param x
+     * @param x ArrayList
      */
     public static void displayArray(ArrayList<Integer> x) {
         System.out.println("The contents of the array: " + x);
