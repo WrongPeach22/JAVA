@@ -54,7 +54,7 @@ public class C7_1 {
     }
 
     /**
-     * Method to calculate the garde by letter
+     * Method to calculate the grade by letter
      *
      * @param score
      * @param best
